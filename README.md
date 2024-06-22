@@ -2,7 +2,7 @@
 
 Este documento descreve o projeto **AssessementSpringBoot**, que consiste em um aplicativo web utilizando Spring Boot para desenvolvimento de serviços REST, integrando dois bancos de dados diferentes: MongoDB e H2.
 
-#### Regras de Negócio
+### Regras de Negócio
 
 O projeto abrange as seguintes regras de negócio:
 
@@ -11,9 +11,9 @@ O projeto abrange as seguintes regras de negócio:
 - **Usuários e Segurança**: Autenticação de usuários com diferentes papéis (roles).
     
 
-#### Configurações da Aplicação
+### Configurações da Aplicação
 
-##### Configurações de Segurança
+#### Configurações de Segurança
 
 A segurança é configurada usando Spring Security com as seguintes características:
 
@@ -22,7 +22,7 @@ A segurança é configurada usando Spring Security com as seguintes característ
 - Autorização baseada em roles (usuário comum e administrador).
     
 
-##### Configuração de Bancos de Dados
+#### Configuração de Bancos de Dados
 
 - **H2 Database**: Configuração para ambiente de desenvolvimento com dados em memória.
     
@@ -49,11 +49,11 @@ O projeto utiliza as seguintes dependências Maven:
 - **JUnit 5 e Mockito**: Para testes unitários e de integração.
     
 
-#### Endpoints da API
+### Endpoints da API
 
 A API REST fornece os seguintes endpoints:
 
-##### Departamentos
+#### Departamentos
 
 - **GET /api/public/departamentos**: Retorna todos os departamentos.
     
@@ -66,7 +66,7 @@ A API REST fornece os seguintes endpoints:
 - **DELETE /api/public/departamentos/{id}**: Deleta um departamento pelo ID.
     
 
-##### Funcionários
+#### Funcionários
 
 - **GET /api/public/funcionarios**: Retorna todos os funcionários.
     
@@ -79,7 +79,7 @@ A API REST fornece os seguintes endpoints:
 - **DELETE /api/public/funcionarios/{id}**: Deleta um funcionário pelo ID.
     
 
-##### Usuários
+#### Usuários
 
 - **GET /api/public/usuarios**: Retorna todos os usuários.
     
@@ -90,7 +90,7 @@ A API REST fornece os seguintes endpoints:
 - **DELETE /api/public/usuarios/{id}**: Deleta um usuário pelo ID.
     
 
-##### Outros
+#### Outros
 
 - **GET /api/public/oimundo**: Exemplo de endpoint público.
     
